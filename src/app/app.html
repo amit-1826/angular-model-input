@@ -1,0 +1,16 @@
+<div class="app-container">
+  <h1>{{ title }}</h1>
+  <p>Demonstrating <strong>[(model)]</strong> binding between parent and child components.</p>
+
+  <div class="input-section">
+    <label for="parentInput">Parent Input:</label>
+    <input id="parentInput" [(ngModel)]="userName" placeholder="Enter your name" />
+  </div>
+
+  <div class="output-section">
+    <p>👨 Parent sees: <strong>{{ userName() }}</strong></p>
+  </div>
+
+  <app-child [(name)]="userName" />
+  
+</div>

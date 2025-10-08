@@ -1,0 +1,43 @@
+.child-container {
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    color: #9333ea;
+    margin-bottom: 1rem;
+  }
+
+  .child-input {
+    label {
+      font-weight: 500;
+      color: #4b5563;
+      margin-right: 0.5rem;
+    }
+
+    input {
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.5rem;
+      border: 2px solid #cbd5e1;
+      transition: border 0.3s;
+
+      &:focus {
+        border-color: #9333ea;
+        outline: none;
+      }
+    }
+
+    p {
+      margin-top: 0.8rem;
+      color: #334155;
+
+      strong {
+        color: #7e22ce;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="child-container">
+  <h2>👶 Child Component</h2>
+
+  <div class="child-input">
+    <label for="childInput">Child Input:</label>
+    <input
+      id="childInput"
+      [value]="name()"
+      (input)="inputChange($event.target.value)"
+    />
+
+    <p>Child sees: <strong>{{ name() }}</strong></p>
+  </div>
+</div>
